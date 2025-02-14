@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oh  no...</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css.css">
+    <div id = "soso">ну и ну... многовато грехов для такой короткой жизни... 
+        хочешь ли ты исправить все?
+        хотя глупый вопрос... таких <i>нельзя</i> выпускать наружу... 
+    </div>
+<div id = "hand-container">
+    <div id = "hand"><img id = "imag" src="https://i.pinimg.com/originals/9c/e7/ec/9ce7ecd11fe028c626969c51a770b5ba.jpg" alt="рука" ></div>
+</div>
+<script>
+const handContainer = document.getElementById('hand-container');
+const hand = document.getElementById('hand');
+
+setTimeout(function() {
+    handContainer.classList.add('visible');
+    hand.style.opacity = '1'; /* Показываем руку */
+    hand.style.transform = 'scale(1)'; /* Увеличиваем до нормального размера */
+
+}, 3000);
+
+
+</script>
+
+</body>
+</html>

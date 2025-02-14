@@ -1,0 +1,110 @@
+body {
+   background: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjFscDB3dm52MHg2YTJ3Y3UxZG10cXVvcXB1ZHoxZDNwbWllM3d3bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lOlSVMbYZtHD7mAAED/giphy.gif) no-repeat;
+   background-size: cover;
+   display: flex;        
+   justify-content: center; 
+   align-items: center;  /*располодение элементов*/   
+   flex-direction: column; /*это чтобы элементы выстраивались вертикально */
+   min-height: 100vh;      
+
+}
+
+#grex{
+   color: white;
+   background-color: rgb(138, 160, 189);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   border-radius: 25px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 10px 20px; 
+   margin: 10px;
+}
+#first:hover, #grex:hover{
+   color:rgb(252, 255, 238);
+   background-color: rgb(102, 122, 146);
+   text-decoration: underline;
+   text-align: center;
+}
+#first, #ident, #soso{
+   color: white;
+   background-color: rgb(114, 134, 180);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   padding: 10px 20px; 
+   border-radius: 15px;
+   font-size: 30px;
+   margin: 10px;
+}
+.container {
+   width: 100vh; 
+   margin: 0 auto; 
+   text-align: center;
+   height: 100vh; 
+   overflow: hidden; 
+   position: relative;
+   -webkit-text-stroke: 0.2px rgb(167, 55, 55);  
+   -ms-overflow-style: none; 
+   scrollbar-width: none;
+
+ }
+ .container::-webkit-scrollbar {
+   display: none; 
+ }
+ 
+ 
+ .limited-text {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   animation: scroll-up 10s linear infinite;
+   color: rgb(255, 255, 255);
+   background-color: rgba(88, 88, 181, 0.225);
+ }
+ 
+
+@keyframes scroll-up {
+   0% {
+       transform: translateY(100%);
+   }
+   100% {
+       transform: translateY(-100%); 
+   }
+}
+i{
+   font-style: italic;
+   color: red;
+}
+#hand {
+   width: 80vh;
+   height: 80vh;
+   position: relative;
+   transform: 0; 
+   transition: transform 2s ease-in-out; 
+   
+}
+ #imag {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; 
+   height: 100%;
+   object-fit: contain;}
+.zoomed {
+   transform:scale(1);}
+
+#hand-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.visible {
+   display: flex !important; 
+}
